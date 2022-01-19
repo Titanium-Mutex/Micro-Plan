@@ -20,4 +20,5 @@
 -c は、call traceモードで、call命令が実行されると何が呼び出されるか表示
 
 ### mpq [-t <symfile>] <filename>
-Q-code である <filename>.qc とそのシンボル表である<filename>.sym を読み込んで、逆アセンブルしたリストを表示(stdout)する｡
+
+      Q-code である <filename>.qc とそのシンボル表である<filename>.sym を読み込んで、逆アセンブルしたリストを表示(stdout)する｡
