@@ -1,8 +1,15 @@
 /****************************************************************/
 /* microplan R-code loader
-/* specification is mady by S. Tomura and first implementation by T. Chikayama, 1978.
-/* microplan-ld.c
+/* specification is defined by S. Tomura and
+/* the first implementation by T. Chikayama, 1978.
 /* C implementation by Toshihiro Matsui, 2021.
+/* Copyright Toshihiro Matsui, 2021.
+/* The author grants any use of this program for any purposes to anyone.
+/*
+/* This loader is intended to be used with mpc and mpx.
+/* Microplan program source is compiled by mpc and the generated R-code
+/* should be given to thie mpld to produce Q-code and the accompanying
+/* csymbol table. 
 /****************************************************************/
 
 
