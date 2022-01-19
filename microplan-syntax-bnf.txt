@@ -1,0 +1,55 @@
+<program> ::= <global declaration> <non empty statement>
+<global declaration> ::= [<global variable declaration>] [<procedure or function declaration> ... ]
+<global variable declaration> ::= [<array variable declaration>] [<simple variable declaration>]
+<array variable declaration> ::= array (<array variable>[<upper bound>]) {,} ...;
+<array variable> ::= <identifier>
+<identifier> ::= <letter>[<letter>|<digit>] ...
+<letter> ::= A..Z
+<digit> ::= 0..9
+<upper bound>::= <constant>
+<constant> ::= <decimal constant> | <hexadecimal constant> | <character constant>
+<decimal constant> ::= <digit> ...
+<hexadecimal constant> ::= $<hexdigit>...
+<hexdigit>:==<digit>|A..F
+<character constant>::="<character>
+<character>::=<one of ASCII 64 character set>
+<simple variable declaration>::=var <simple variable>{,}...;
+<simple variable>::=<identifier>
+<procedure or function declaration>::=<procedure declaration>|<function declaration>
+<procedure declaration>::=proc <procedure identifier>(<formal parameter list>);
+                          [<local variable declaration>}<statement>;
+<procedure identifier>::=<identifier>
+<formal parameter list>::=[array <array variable>{,}...][<simple variable>{,}...]
+<local variable declaration>::=<simple variable declaration>
+<function declaration>::=func <function identifier>(<formal parameter list>);
+                         [<local variable declaration>]<statement>;
+<statement>::=[<non empty statement>]
+<non empty statement>::=<assignment>|<compound statement>|<if statement>|<while statement>|
+                        <repeat statement>|<return statement>|<put statement>|
+                        <halt statement>|<procedure statement>
+<assignment>::=<variable>_<expression>
+<variable>::=<simple variable>|<array variable>[<subscript expression>]
+<subscript expression>::=<expression>
+<expression>::=<simple expression>[<relational operator><simple expression>]
+<simple expression>::=[<adding operator>]<term>{<adding operator>}...
+<adding operator>::=+|-|or
+<term>::=<factor>{<multiplying operator>}...
+<multiplying operator>::=*|div|mod|and
+<factor>::=<constant>|(<expression>)|<special function>|not <factor>|
+           <get function>|<variable>|<function call>
+<special function>::=(inc|dec)(<simple variable>)
+<get function>:==get()
+<function call>::=<function identifier>(<actual parameter list>)
+<actual parameter list>::=[<array variable>{,}...,][<expression>{,}...]
+<compound statement>::=begin <statement>{;}... end
+<if statement>::=if <expression> then <statement> [else <statement>]
+<while statement>::=while <expression> do <statement>
+<repeat statement>::=repeat <statement>{;}... until <expression>
+<return statement>::=return <expression>
+<put statement>::=put((<expression>|<string>){,}...)
+<string>::='[<string character>...]'
+<string character>:=="'|""|<one of ASCII 64 character set except ' and ">
+<halt statement>::=halt()
+<procedure statement>::=<procedure identifier>(<actual parameter list>)
+<comment>::=%[<one of ASCII 64 character set except %>...%
+
