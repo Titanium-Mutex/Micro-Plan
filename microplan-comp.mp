@@ -1,16 +1,24 @@
-% MICROPLAN compiler microplan-comp.mp %
-% Copyright(c) Satoru Tomura, 1978, all rights reserved %
-% The author gives permission for any use of this program %
-% including copying and redistribution %
-% for any purposes including education and commercial use %
-% to anyone who loves programming on microcomputers. %
-% Original article was published in the "bit" magazine 1978 special issue %
-% by Kyoritsu Shuppan publisher. %
-% Github release is granted by Satoru Tomura %
-% and Kyoritsu Shuppan publisher in January 2022. %
-% The source code is regenerated from the original article %
-% by Toshihiro Matsui in 2021. %
-% For the compilation of this source file, use mpc, mpld and mpx. %
+%  MicroPlan Compiler:  %
+%  %
+%  This program is published in the article [1].  %
+%   [1] S. Tomura: "MicroPlan Compiler", Microcomputer Programming,  %
+%        bit Feb.extra issue,  Vol.10, No. 3, pp.112-144,  %
+%        Kyoritsu Shuppan Co. Ltd., 1978. (in Japanese)   %
+%  %
+%  Copyright 1978 Satoru Tomura  %
+%  %
+%  This program is free software: you can redistribute it and/or modify  %
+%  it under the terms of the GNU General Public License as published by  %
+%  the Free Software Foundation, either version 3 of the License, or  %
+%  any later version.  %
+%  %
+%  This program is distributed in the hope that it will be useful,  %
+%  but WITHOUT ANY WARRANTY; without even the implied warranty of  %
+%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the  %
+%  GNU General Public License for more details.  %
+%  %
+%  You should have received a copy of the GNU General Public License  %
+%  along with this program.  If not, see <https://www.gnu.org/licenses/>.  %
 
 ARRAY IDTAB[255];
 VAR      CH,SY,VAL,PSMODE,PSVAL, IDP, IDQ, IDR, IDN, NOGL, NOLO,
