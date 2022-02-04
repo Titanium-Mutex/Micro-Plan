@@ -1,9 +1,10 @@
 /****************************************************************
 /* Micro PLAN
 /* Micro Plan was originally created and published by S. Tomura, 1978.
-/* mpc.c is a recode of the compiler in C by Toshihiro Matsui,
-/* December, 2021, thus copyrighted to Toshihiro Matsui.
+/* mpc.c is a recode of the compiler in C by Toshihiro Matsui, Dec. 2021,
+/* thus copyrighted to Satoru Tomura and partially to Toshihiro Matsui.
 /* The author grants any use of this program for any purposes to anyone.
+/*
 /* % microplan -i <source> -o <r-code> -t <compiler-nametable>
 /* Default source is stdin, r-code is stdout, and the compiler-nametable
 /* is assumed to be prepended before the source code.
