@@ -29,6 +29,6 @@ Microplanで書かれたMicroplanコンパイラをCで書き直した。負数�
  -d (debug) を指定すると､実行される命令が逆アセンブル表示される　(トレースモード）。
  -c は、call traceモードで、call命令が実行されると何が呼び出されるか表示
 
-### mpq [-t <symfile>] filename
+### mpq [-t symfile] filename
 
  Q-code である filename.qc とそのシンボル表であるfilename.sym を読み込んで、逆アセンブルしたリストをstdoutに出力する｡
